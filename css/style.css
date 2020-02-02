@@ -1,0 +1,260 @@
+/* reset */
+document, html, body, div, section,
+span, header, h1, h2, a, p {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0.2px;
+    line-height: 1.5em;
+}
+
+/* font */
+
+h1, h2 {
+    font-size: 22px;
+    font-weight:bolder;
+}
+
+/* background */
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+/* header */
+
+.header {
+    padding: 30px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    z-index: 1;
+    -webkit-box-shadow: 0 0 0 0 #fafafa;
+    -moz-box-shadow: 0 0 0 0 #fafafa;
+    box-shadow: 0 0 0 0 #fafafa;
+}
+
+.header-wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+}
+
+nav ul {
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav li a {
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 36px;
+    padding: 4px;
+    text-transform: capitalize;
+}
+
+nav li a.active,
+nav li a:hover {
+    color: #000;
+}
+
+nav li a.active {
+    border: 1.5px solid #000;
+
+}
+
+/* content */
+
+.content {
+    margin: 0 auto;
+    margin-top: 200px;
+    max-width: 1080px;
+    padding: 15px 30px;
+}
+
+section {
+    padding: 0 0 30px 0;
+}
+
+h2 {
+    text-align: center;
+    padding: 0 0 24px 0;
+    color: #000000;
+}
+
+.section-title {
+    font-size: 20px;
+    padding: 0 0 10px 0;
+    color: #000000;
+    font-weight: bold;
+}
+
+.section-descritpion {
+    font-size: 14px;
+    color: #000000;
+}
+
+.section-descritpion p {
+    padding: 0 0 8px 0;
+}
+
+section img {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 0 8px 0;
+}
+
+.graphic-img {
+    max-width: 510px;
+    width: 100%;
+    height: 700px;
+}
+
+.about-wrapper {
+    width: 100%;
+}
+
+.about-img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-text {
+    padding: 30px 0 200px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.live-link {
+    color: #3366ff;
+    font-size: 208px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+
+/* fotter */
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    padding: 180px 30px 30px 30px;
+}
+
+footer .signiture {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
+footer .copy-right {
+    margin: 0 auto;
+    text-align: center;
+    color: #999;
+}
+
+/* utility */
+.display-table {
+    display: table;
+    width: 100%;
+}
+
+.display-row {
+    display: table-row;
+}
+
+.display-cell {
+    display: table-cell;
+    width: 50%;
+    padding: 0 0 60px 0;
+}
+
+.display-cell:last-child {
+    text-align: right;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.padding-top-15 {
+    padding-top: 15px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* animation */
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+
+@-webkit-keyframes header {
+    from { padding: 30px 30px; }
+      to { padding: 5px 30px; }
+}
+
+@keyframes header {
+    from { padding: 30px 30px; }
+      to { padding: 5px 30px; }
+}
+
+/* funcional */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.header.shrink {
+    padding: 5px 30px;
+    -webkit-animation: header 0.5s;
+    animation: header 0.5s;
+    -webkit-box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.2);
+}

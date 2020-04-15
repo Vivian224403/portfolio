@@ -21,18 +21,28 @@
                 </div>
                 <nav>
                     <ul id="nav">
-                        <li class="nav-link">
-                            <a id="case1" class="active" href="#">UX/UI CASE1</a>
+                        <li class="nav-link active">
+                            <a id="home" class="" href="#">HOME</a>
                         </li>
                         <li class="nav-link">
-                            <a id="case2" href="#">UX/UI CASE2</a>
+                            <div class="nav-sub" id="sub-nav1">
+                                <span class="name">WEB UX/UI</span>
+                                <span class="arrow">
+                                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg>
+                                </span>
+                                <div class="nav-dropdown">
+                                    <a id="web-case1" href="#">CASE 1</a>
+                                    <a id="web-case2" href="#">CASE 2</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-link">
-                            <a id="graphic" href="#">GRAPHIC WORKS</a>
+                            <a id="app-case" href="#">APP UX/UI</a>
                         </li>
                         <li class="nav-link">
-                            <a id="about" href="#">ABOUT</a>
+                            <a id="graphic" href="#">GRAPHIC</a>
                         </li>
+                        
                     </ul>
                 </nav>        
                 <div class="clear-fix"></div>
@@ -42,9 +52,33 @@
 
         <!-- content begin -->
         <div id="content" class="content">
+
             
-            <!-- case1 page begin -->
-            <div id="page-case1" class="page active">
+            <!-- home page begin -->
+            <div id="page-home" class="page active">
+                <div class="home-wrapper">
+                    <section>
+                        <img src="./assets/supervivian.jpg" alt="replace me with the real image">
+                    </section>
+    
+                    <div class="intro">
+                        Hello, I am Vivian.
+                    </div>
+
+                    <div class="intro-text">
+                        Design and life are just like a challenge game. We live and try fully in the here and now,then the gate of new journey will open before you realize.
+                    </div>
+
+                    <a href="#" class="email">Email: vivisual1006@gmail.com</a>
+                    <a href="#" class="linked-in">Likedin</a>
+
+                </div>
+                
+            </div>
+            <!-- home page end -->
+            
+            <!-- web case1 page begin -->
+            <div id="page-web-case1" class="page">
                 <h2>Case 1: IVC Telecom Website</h2>                
                 
                 <section class="padding-top-15">
@@ -183,17 +217,15 @@
                         <br>
                         <p>
                             <b>3.5</b> Order placement (See it, achieve it)</p>
-                            <p>Once finished all the web page mock-ups, I need to apply the design style to order placement page.
-A progress bar was built in all the order placing and confirmation pages so that the user knows what information s(he) has to fill at each stage. This also breaks down the process into chunks and the user is not burdened with everything on one page.
+                            <p>Once finished all the web page mock-ups, I need to apply the design style to order placement page. A progress bar was built in all the order placing and confirmation pages so that the user knows what information s(he) has to fill at each stage. This also breaks down the process into chunks and the user is not burdened with everything on one page.
                         </p>
                         <br>
                         <p>
                             <img src="./assets/3.5.jpg" alt="the process site structure">
                         </p>
 
-                        <p>
-                            
-The visual hierarchy is also displayed based on different content importance. This gives visitors the clarity to understand the actions they need to take to finish the process.
+                        <p>     
+                            The visual hierarchy is also displayed based on different content importance. This gives visitors the clarity to understand the actions they need to take to finish the process.
                         </p>
 
                         <br>
@@ -257,10 +289,16 @@ The visual hierarchy is also displayed based on different content importance. Th
 
 
             </div> 
-            <!-- case1 page end -->
+            <!-- web case1 page end -->
 
-            <!-- case2 page begin -->
-            <div id="page-case2" class="page todo-remove-me">
+            <!-- web case2 page begin -->
+            <div id="page-web-case2" class="page">
+                <h2>Web Case 2: IVC Telecom Website</h2>                
+            </div> 
+            <!-- web case2 page end -->
+
+            <!-- app case page begin -->
+            <div id="page-app-case" class="page">
                 <h2>Case 2: CIK Self Service App</h2>
                     
                     <section>
@@ -406,8 +444,7 @@ The visual hierarchy is also displayed based on different content importance. Th
 
                             </p>
                             <p>
-                                Since the screen size is way much smaller than a desktop screen. So all elements should have it’s own task, no matter it’s an icon or a button. 
-If it makes no sense and not necessary for the user, why put it on the screen?
+                                Since the screen size is way much smaller than a desktop screen. So all elements should have it’s own task, no matter it’s an icon or a button. If it makes no sense and not necessary for the user, why put it on the screen?
                             </p>
                             <br>
                             <p>
@@ -431,10 +468,10 @@ If it makes no sense and not necessary for the user, why put it on the screen?
     
 
             </div> 
-            <!-- case2 page end -->
+            <!-- app case page end -->
 
             <!-- graphic page begin -->
-            <div id="page-graphic" class="page todo-remove-me">
+            <div id="page-graphic" class="page">
                 <h2>Graphic</h2>
 
                 <section class="padding-top-15">
@@ -531,45 +568,13 @@ If it makes no sense and not necessary for the user, why put it on the screen?
                     <img src="./assets/graphic.other7.jpg" alt="replace me with the real image">
                 </section>
 
-
-
-
-
-
-
-
-
-
-
-            
             </div>    
-            <!-- grahic page end  ---->
+            <!-- grahic page end  -->
 
-            <!-- about page begin -->
-            <div id="page-about" class="page todo-remove-me">
-                <h2>About</h2>
-                <div class="about-wrapper">
-                    <img class="about-img" src="./assets/supervivian.jpg" alt="replace me with the real image">
-                    <br>
-                    <div class="about-text">
-                        <p>
-                            Design and life are just like a challenge game. We live and try fully in the here and now,then the gate of new journey will open before you realize.
-            
-                        </p>    
-                        <br>
-                        <p>
-                            If you like me, please feel free to contact me: vivisual1006@gmail.com .
-            
-                        </p>    
 
-                    </div>
-                </div>
-                
-            </div>
-            <!-- about page end ---->
             
         </div>
-        <!-- content end ---->
+        <!-- content end -->
 
         <!-- fotter begin -->
         <footer>
@@ -578,9 +583,10 @@ If it makes no sense and not necessary for the user, why put it on the screen?
             </div>
             <div class="copy-right">&copy; 2020</div>
         </footer>
-        <!-- fotter end ---->
+        <!-- fotter end -->
         
     </div>
+    
     <script type="text/javascript" src="./js/main.js"></script> 
 </body>
 </html>
